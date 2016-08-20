@@ -14,6 +14,13 @@
 		A633320D194B128300741D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A633320B194B128300741D78 /* Main.storyboard */; };
 		A633320F194B128300741D78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A633320E194B128300741D78 /* Images.xcassets */; };
 		A6F17823194B2A920050E5DF /* TOMSMorphingLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F17822194B2A920050E5DF /* TOMSMorphingLabelTests.m */; };
+		CE566E3E1D683E220074EC02 /* TOMSMorphingLabel-Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE566E3D1D683E220074EC02 /* TOMSMorphingLabel-Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE566E421D683E220074EC02 /* TOMSMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE566E3B1D683E220074EC02 /* TOMSMorphingLabel.framework */; };
+		CE566E431D683E220074EC02 /* TOMSMorphingLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE566E3B1D683E220074EC02 /* TOMSMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE566E4D1D683E970074EC02 /* NSString+Morphing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE566E491D683E970074EC02 /* NSString+Morphing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE566E4E1D683E970074EC02 /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CE566E4A1D683E970074EC02 /* NSString+Morphing.m */; };
+		CE566E4F1D683E970074EC02 /* TOMSMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE566E4B1D683E970074EC02 /* TOMSMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE566E501D683E970074EC02 /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE566E4C1D683E970074EC02 /* TOMSMorphingLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,28 @@
 			remoteGlobalIDString = A63331FD194B128300741D78;
 			remoteInfo = TOMSMorphingLabelExample;
 		};
+		CE566E401D683E220074EC02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63331F6194B128300741D78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE566E3A1D683E220074EC02;
+			remoteInfo = TOMSMorphingLabel;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE566E471D683E220074EC02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE566E431D683E220074EC02 /* TOMSMorphingLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D92B98879D6419CAEC10F04 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +83,14 @@
 		A6333219194B128300741D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F17822194B2A920050E5DF /* TOMSMorphingLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabelTests.m; sourceTree = "<group>"; };
 		B8541747CA2749838112C6CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CE566E3B1D683E220074EC02 /* TOMSMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOMSMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE566E3D1D683E220074EC02 /* TOMSMorphingLabel-Umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TOMSMorphingLabel-Umbrella.h"; sourceTree = "<group>"; };
+		CE566E3F1D683E220074EC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE566E491D683E970074EC02 /* NSString+Morphing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Morphing.h"; path = "../../Classes/NSString+Morphing.h"; sourceTree = "<group>"; };
+		CE566E4A1D683E970074EC02 /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Morphing.m"; path = "../../Classes/NSString+Morphing.m"; sourceTree = "<group>"; };
+		CE566E4B1D683E970074EC02 /* TOMSMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TOMSMorphingLabel.h; path = ../../Classes/TOMSMorphingLabel.h; sourceTree = "<group>"; };
+		CE566E4C1D683E970074EC02 /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TOMSMorphingLabel.m; path = ../../Classes/TOMSMorphingLabel.m; sourceTree = "<group>"; };
+		CE566E511D683EC90074EC02 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +98,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE566E421D683E220074EC02 /* TOMSMorphingLabel.framework in Frameworks */,
 				7F003CA55B3D41768676B807 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A6333211194B128300741D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE566E371D683E220074EC02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +133,7 @@
 			children = (
 				A6333200194B128300741D78 /* TOMSMorphingLabelExample */,
 				A6333217194B128300741D78 /* TOMSMorphingLabelExampleTests */,
+				CE566E3C1D683E220074EC02 /* TOMSMorphingLabel */,
 				A63331FF194B128300741D78 /* Products */,
 				B8541747CA2749838112C6CE /* Pods.xcconfig */,
 				5A5DDDEE93334B7FB099CF76 /* Frameworks */,
@@ -100,6 +145,7 @@
 			children = (
 				A63331FE194B128300741D78 /* TOMSMorphingLabelExample.app */,
 				A6333214194B128300741D78 /* TOMSMorphingLabelExampleTests.xctest */,
+				CE566E3B1D683E220074EC02 /* TOMSMorphingLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +198,42 @@
 			name = Boilerplate;
 			sourceTree = "<group>";
 		};
+		CE566E3C1D683E220074EC02 /* TOMSMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CE566E481D683E690074EC02 /* Classes */,
+				CE566E3D1D683E220074EC02 /* TOMSMorphingLabel-Umbrella.h */,
+				CE566E3F1D683E220074EC02 /* Info.plist */,
+				CE566E511D683EC90074EC02 /* module.modulemap */,
+			);
+			path = TOMSMorphingLabel;
+			sourceTree = "<group>";
+		};
+		CE566E481D683E690074EC02 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE566E491D683E970074EC02 /* NSString+Morphing.h */,
+				CE566E4A1D683E970074EC02 /* NSString+Morphing.m */,
+				CE566E4B1D683E970074EC02 /* TOMSMorphingLabel.h */,
+				CE566E4C1D683E970074EC02 /* TOMSMorphingLabel.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE566E381D683E220074EC02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE566E4D1D683E970074EC02 /* NSString+Morphing.h in Headers */,
+				CE566E3E1D683E220074EC02 /* TOMSMorphingLabel-Umbrella.h in Headers */,
+				CE566E4F1D683E970074EC02 /* TOMSMorphingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A63331FD194B128300741D78 /* TOMSMorphingLabelExample */ = {
@@ -164,10 +245,12 @@
 				A63331FB194B128300741D78 /* Frameworks */,
 				A63331FC194B128300741D78 /* Resources */,
 				A910B2D820074AD1AC6AB7E4 /* Copy Pods Resources */,
+				CE566E471D683E220074EC02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE566E411D683E220074EC02 /* PBXTargetDependency */,
 			);
 			name = TOMSMorphingLabelExample;
 			productName = TOMSMorphingLabelExample;
@@ -194,6 +277,24 @@
 			productReference = A6333214194B128300741D78 /* TOMSMorphingLabelExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE566E3A1D683E220074EC02 /* TOMSMorphingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE566E461D683E220074EC02 /* Build configuration list for PBXNativeTarget "TOMSMorphingLabel" */;
+			buildPhases = (
+				CE566E361D683E220074EC02 /* Sources */,
+				CE566E371D683E220074EC02 /* Frameworks */,
+				CE566E381D683E220074EC02 /* Headers */,
+				CE566E391D683E220074EC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TOMSMorphingLabel;
+			productName = TOMSMorphingLabel;
+			productReference = CE566E3B1D683E220074EC02 /* TOMSMorphingLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +310,9 @@
 					A6333213194B128300741D78 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = A63331FD194B128300741D78;
+					};
+					CE566E3A1D683E220074EC02 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -227,6 +331,7 @@
 			targets = (
 				A63331FD194B128300741D78 /* TOMSMorphingLabelExample */,
 				A6333213194B128300741D78 /* TOMSMorphingLabelExampleTests */,
+				CE566E3A1D683E220074EC02 /* TOMSMorphingLabel */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +347,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A6333212194B128300741D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE566E391D683E220074EC02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +414,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE566E361D683E220074EC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE566E4E1D683E970074EC02 /* NSString+Morphing.m in Sources */,
+				CE566E501D683E970074EC02 /* TOMSMorphingLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -319,6 +440,11 @@
 			isa = PBXTargetDependency;
 			target = A63331FD194B128300741D78 /* TOMSMorphingLabelExample */;
 			targetProxy = A6F17826194B2A9B0050E5DF /* PBXContainerItemProxy */;
+		};
+		CE566E411D683E220074EC02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE566E3A1D683E220074EC02 /* TOMSMorphingLabel */;
+			targetProxy = CE566E401D683E220074EC02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +598,58 @@
 			};
 			name = Release;
 		};
+		CE566E441D683E220074EC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TOMSMorphingLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tomknig.TOMSMorphingLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE566E451D683E220074EC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TOMSMorphingLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.tomknig.TOMSMorphingLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +679,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CE566E461D683E220074EC02 /* Build configuration list for PBXNativeTarget "TOMSMorphingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE566E441D683E220074EC02 /* Debug */,
+				CE566E451D683E220074EC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

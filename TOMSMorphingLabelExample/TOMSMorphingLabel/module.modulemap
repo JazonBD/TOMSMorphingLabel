@@ -1,0 +1,14 @@
+//
+//  module.modulemap
+//  TOMSMorphingLabelExample
+//
+//  Created by Błażej Szajrych on 20.08.2016.
+//  Copyright © 2016 TomKnig. All rights reserved.
+//
+
+framework module ZCAnimatedLabel {
+    umbrella header "TOMSMorphingLabel-Umbrella.h"
+    
+    export *
+    module * { export * }
+}
